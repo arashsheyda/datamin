@@ -1,0 +1,27 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@datamin/apps": ["libs/apps/src/index.ts"],
+      "@datamin/authentication": ["libs/authentication/src/index.ts"],
+      "@datamin/base": ["libs/base/src/index.ts"],
+      "@datamin/core": ["libs/core/src/index.ts"],
+      "@datamin/corporate": ["libs/corporate/src/index.ts"],
+      "@datamin/general": ["libs/general/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

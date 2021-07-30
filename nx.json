@@ -1,0 +1,55 @@
+{
+  "npmScope": "datamin",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    ".eslintrc.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
+        "accessToken": "M2U2MGZhZGUtODU1Yy00YTZhLTg2N2ItOTc0ZjBlNWVlZTEzfHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
+      }
+    }
+  },
+  "targetDependencies": {
+    "build": [
+      {
+        "target": "build",
+        "projects": "dependencies"
+      }
+    ]
+  },
+  "projects": {
+    "apps": {
+      "tags": []
+    },
+    "authentication": {
+      "tags": []
+    },
+    "base": {
+      "tags": []
+    },
+    "core": {
+      "tags": []
+    },
+    "corporate": {
+      "tags": []
+    },
+    "general": {
+      "tags": []
+    },
+    "server": {
+      "tags": []
+    }
+  }
+}
